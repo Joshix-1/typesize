@@ -1,5 +1,11 @@
 # `typesize` ChangeLog
 
+## 0.1.15
+
+### New library integrations
+
+- `TypeSize` is now implemented for types from the `jiff` datetime library.
+
 ## 0.1.14
 
 ### New library integrations
