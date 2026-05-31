@@ -1,4 +1,5 @@
-use crate::{sizeof_impl, TypeSize};
+use super::sizeof_impl;
+use crate::TypeSize;
 
 sizeof_impl!(core::time::Duration);
 

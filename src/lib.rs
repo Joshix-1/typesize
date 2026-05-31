@@ -50,7 +50,7 @@
 //! [`DashMap`]: dashmap::DashMap
 //! [`Secret`]: secrecy::Secret
 #![cfg_attr(not(feature = "std"), no_std)]
-
+#![cfg_attr(feature = "saturating_impls", expect(clippy::incompatible_msrv))]
 extern crate alloc;
 
 mod r#box;

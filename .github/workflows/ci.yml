@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Run Cargo test
         run: cargo test --all-features
@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout respository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Install cargo-minimal-versions
         uses: taiki-e/install-action@v2
@@ -35,7 +35,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Install generic target with no std
         run: rustup target add x86_64-unknown-none

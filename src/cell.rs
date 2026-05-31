@@ -1,4 +1,5 @@
-use crate::{if_typesize_details, TypeSize};
+use super::if_typesize_details;
+use crate::TypeSize;
 
 impl<T: TypeSize + Copy> TypeSize for core::cell::Cell<T> {
     fn extra_size(&self) -> usize {

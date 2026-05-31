@@ -1,6 +1,7 @@
 use alloc::boxed::Box;
 
-use crate::{if_typesize_details, TypeSize};
+use super::if_typesize_details;
+use crate::TypeSize;
 
 impl<T: TypeSize> TypeSize for Box<[T]> {
     fn extra_size(&self) -> usize {
